@@ -1,2 +1,2 @@
-module.exports.Cookie = require('./cookie')
+module.exports.cookie = require('./cookie')
 module.exports.localStorage = require('./localStorage')

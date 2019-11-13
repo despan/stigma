@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import { Cookie } from '../src/adapters'
+import { cookie as Adapter } from '../src/adapters'
 
 test.beforeEach(t => {
   // mock cookies
@@ -9,7 +9,7 @@ test.beforeEach(t => {
 })
 
 test.serial('put', async t => {
-  const { put } = Cookie
+  const { put } = Adapter
 
   // check initial
   t.is(t.context.cookie, '')
@@ -25,7 +25,7 @@ test.serial('put', async t => {
 })
 
 test.serial('get', async t => {
-  const { get } = Cookie
+  const { get } = Adapter
 
   // predefine cookie
   t.context.cookie = 'a=x;'
