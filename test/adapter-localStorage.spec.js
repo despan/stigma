@@ -1,16 +1,11 @@
 import test from 'ava'
 
-import 'mock-local-storage'
-
 import { localStorage as Adapter } from '../src/adapters'
 
 test.beforeEach(t => {
-  // mock cookies
-  global.window = {}
-  global.window.localStorage = global.localStorage
-
+  // mock localStorage
   // keep reference in context
-  t.context = global.window
+  t.context = require('./helpers/mock-localStorage')
 })
 
 test.serial('put', async t => {

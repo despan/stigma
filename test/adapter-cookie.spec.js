@@ -1,18 +1,11 @@
 import test from 'ava'
 
-import MockCookie from 'mock-cookie'
-
 import { Cookie } from '../src/adapters'
 
 test.beforeEach(t => {
   // mock cookies
-  const document = new MockCookie.Document()
-
-  global.window = { document }
-  global.document = document
-
   // keep reference in context
-  t.context = document
+  t.context = require('./helpers/mock-cookie')
 })
 
 test.serial('put', async t => {
@@ -37,8 +30,6 @@ test.serial('get', async t => {
   // predefine cookie
   t.context.cookie = 'a=x;'
   t.context.cookie = 'b=y;'
-
-  await get('a').then()
 
   t.is(await get('a'), 'x')
   t.is(await get('b'), 'y')
