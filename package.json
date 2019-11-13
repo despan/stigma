@@ -33,6 +33,11 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
+    "mock-cookie": "^0.3.2",
+    "mock-local-storage": "^1.1.10",
     "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.1"
   }
 }
