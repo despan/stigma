@@ -1,0 +1,38 @@
+{
+  "name": "stigma",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "eslint --fix --ignore-path .gitignore ./**/*.js",
+    "lint:staged": "lint-staged",
+    "test": "ava",
+    "test:watch": "ava -vw",
+    "test:coverage": "nyc ava -v",
+    "preversion": "npm run lint && npm run test",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/despan/stigma.git"
+  },
+  "author": "Mushegh Antaranyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/despan/stigma/issues"
+  },
+  "homepage": "https://github.com/despan/stigma#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "ava": "^2.4.0",
+    "conventional-changelog-cli": "^2.0.27",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "nyc": "^14.1.1"
+  }
+}
