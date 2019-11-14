@@ -3,7 +3,7 @@
 
 # stigma :construction:
 
-[![Published Version](https://img.shields.io/npm/v/choker)](https://www.npmjs.com/package/choker)
+[![Published Version](https://img.shields.io/npm/v/stigma)](https://www.npmjs.com/package/stigma)
 [![Commit Style](https://img.shields.io/badge/commits-conventional-blue.svg)](https://conventionalcommits.org)
 [![Code Style](https://img.shields.io/badge/code%20style-standard-blue.svg)](http://standardjs.com)
 [![GitHub](https://img.shields.io/github/license/despan/choker)](/LICENSE)
