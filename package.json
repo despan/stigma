@@ -2,12 +2,13 @@
   "name": "stigma",
   "version": "0.0.0",
   "scripts": {
-    "lint": "eslint --fix --ignore-path .gitignore ./**/*.js",
+    "lint": "eslint --fix ./src/**/*.js ./test/**/*.js",
     "lint:staged": "lint-staged",
     "test": "ava",
     "test:watch": "ava -vw",
     "test:coverage": "nyc ava -v",
-    "preversion": "npm run lint && npm run test",
+    "build": "webpack",
+    "preversion": "npm run lint && npm run test && npm run build",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "repository": {
@@ -35,7 +36,9 @@
     "lint-staged": "^9.4.2",
     "mock-cookie": "^0.3.2",
     "mock-local-storage": "^1.1.10",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
     "js-cookie": "^2.2.1"
