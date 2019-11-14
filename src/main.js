@@ -34,9 +34,16 @@ function main (key) {
       .then(recover)
   }
 
+  function has () {
+    const isNil = value => value !== undefined
+    return get()
+      .then(isNil)
+  }
+
   return {
     put,
-    get
+    get,
+    has
   }
 }
 
