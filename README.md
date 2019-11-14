@@ -3,7 +3,7 @@
 
 # stigma :construction:
 
-
+[![Published Version](https://img.shields.io/npm/v/choker)](https://www.npmjs.com/package/choker)
 [![Commit Style](https://img.shields.io/badge/commits-conventional-blue.svg)](https://conventionalcommits.org)
 [![Code Style](https://img.shields.io/badge/code%20style-standard-blue.svg)](http://standardjs.com)
 [![GitHub](https://img.shields.io/github/license/despan/choker)](/LICENSE)
@@ -65,3 +65,7 @@ npm run test:watch
 ## Acknowledgement
 
 - Logo created by beth bolton from the Noun Project
+
+## License
+
+The MIT License
