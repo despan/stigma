@@ -16,6 +16,8 @@
 npm install stigma
 ```
 
+To directly include in browser use _"./dist/main.js"_
+
 ### Usage
 
 ```js
