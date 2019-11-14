@@ -10,12 +10,23 @@
 
 > Mark client browser using various storage options
 
-## Usage
-
 ### Installation
 
 ```sh
 npm install stigma
+```
+
+### Usage
+
+```js
+import Stigma from 'stigma'
+
+const { put, get } = Stigma('KEY')
+
+async function test () {
+  await put('xxx')
+  await get() // > "xxx"
+}
 ```
 
 ### API
