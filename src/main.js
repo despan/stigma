@@ -40,10 +40,16 @@ function main (key) {
       .then(isNil)
   }
 
+  function recover () {
+    return get()
+      .then(put)
+  }
+
   return {
     put,
     get,
-    has
+    has,
+    recover
   }
 }
 

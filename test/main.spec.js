@@ -34,3 +34,9 @@ test.serial('get - cookie only', async t => {
 
   t.is(await get(), 'xxx')
 })
+
+test.serial('recover - cookie only', async t => {
+  const { recover } = Stigma('abc')
+
+  t.is(typeof recover, 'function')
+})
