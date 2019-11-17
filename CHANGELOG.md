@@ -1,3 +1,12 @@
+## [0.0.2](https://github.com/despan/stigma/compare/v0.0.1...v0.0.2) (2019-11-17)
+
+
+### Features
+
+* implement `recover` ([31507a9](https://github.com/despan/stigma/commit/31507a96a0df8c08111cd2050423ab16d90b09b9))
+
+
+
 ## 0.0.1 (2019-11-14)
 
 
