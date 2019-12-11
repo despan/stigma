@@ -31,6 +31,8 @@ async function test () {
 }
 ```
 
+NOTE: use `auto.js` for auto-regeneration on load
+
 ### API
 
 > TODO
