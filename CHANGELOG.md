@@ -1,3 +1,13 @@
+## [0.0.3](https://github.com/despan/stigma/compare/v0.0.2...v0.0.3) (2019-12-11)
+
+
+### Features
+
+* add auto-regenerate script ([76ed908](https://github.com/despan/stigma/commit/76ed908115658858c36c8bf08c98c49319ed9421))
+* init adapter for sessionStorage ([8ae44bc](https://github.com/despan/stigma/commit/8ae44bc3f55094fb0d33745c62ffa1d29aa3e635))
+
+
+
 ## [0.0.2](https://github.com/despan/stigma/compare/v0.0.1...v0.0.2) (2019-11-17)
 
 

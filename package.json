@@ -1,6 +1,6 @@
 {
   "name": "stigma",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "lint": "eslint --fix ./src/**/*.js ./test/**/*.js",
     "lint:staged": "lint-staged",
